@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react';
 import { useLanguage } from '../hooks/useLanguage';
 
 const TestimonialsSection = () => {
-  const { t } = useLanguage();
+  const { t, currentLanguage } = useLanguage();
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
 
   // Auto-rotate testimonials
@@ -17,7 +17,7 @@ const TestimonialsSection = () => {
   }, [t.testimonials.items.length]);
 
   return (
-    <section className="py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+    <section className="py-16 md:py-24 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 opacity-5">
         <svg className="w-full h-full" viewBox="0 0 100 100" fill="none">
@@ -25,10 +25,10 @@ const TestimonialsSection = () => {
         </svg>
       </div>
 
-      <div className="max-w-4xl mx-auto px-6 relative z-10">
+      <div className="max-w-4xl mx-auto px-6 md:px-8 relative z-10">
         {/* Title */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+        <div className="text-center mb-20">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
             {t.testimonials.title}
           </h2>
         </div>
@@ -45,24 +45,24 @@ const TestimonialsSection = () => {
           </div>
 
           {/* Testimonial Card */}
-          <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 text-center">
-            <div className="mb-8">
-              <p className="text-xl md:text-2xl text-gray-700 leading-relaxed font-medium italic">
+          <div className="bg-white rounded-2xl shadow-xl p-8 md:p-16 text-center">
+            <div className="mb-10">
+              <p className="text-xl md:text-2xl lg:text-3xl text-gray-700 leading-relaxed font-medium italic">
                 "{t.testimonials.items[currentTestimonial].text}"
               </p>
             </div>
 
-            <div className="flex items-center justify-center gap-4">
-              <div className="w-16 h-16 bg-gradient-to-br from-primary to-yellow-300 rounded-full flex items-center justify-center">
-                <span className="text-2xl font-bold text-black">
+            <div className="flex items-center justify-center gap-6">
+              <div className="w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-primary to-yellow-300 rounded-full flex items-center justify-center shadow-lg">
+                <span className="text-2xl md:text-3xl font-bold text-black">
                   {t.testimonials.items[currentTestimonial].author.charAt(0)}
                 </span>
               </div>
               <div className="text-left">
-                <div className="font-bold text-gray-900 text-lg">
+                <div className="font-bold text-gray-900 text-lg md:text-xl">
                   {t.testimonials.items[currentTestimonial].author}
                 </div>
-                <div className="text-gray-500">
+                <div className="text-gray-500 text-base md:text-lg">
                   {t.testimonials.items[currentTestimonial].location}
                 </div>
               </div>
@@ -86,18 +86,37 @@ const TestimonialsSection = () => {
         </div>
 
         {/* Social proof elements */}
-        <div className="mt-16 flex justify-center gap-8 opacity-60">
-          <div className="flex items-center gap-2">
-            <span className="text-yellow-400 text-2xl">⭐⭐⭐⭐⭐</span>
-            <span className="text-gray-600 font-medium">5.0 Rating</span>
+        <div className="mt-16 opacity-60">
+          {/* Desktop: horizontal layout */}
+          <div className="hidden sm:flex justify-center gap-8">
+            <div className="flex items-center gap-2">
+              <span className="text-yellow-400 text-2xl">⭐⭐⭐⭐⭐</span>
+              <span className="text-gray-600 font-medium">5.0 Rating</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-2xl">✈️</span>
+              <span className="text-gray-600 font-medium">250+ Tours</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <span className="text-2xl">🇵🇱</span>
+              <span className="text-gray-600 font-medium">{currentLanguage === 'pl' ? 'Polskie' : currentLanguage === 'es' ? 'Propio Polaco' : 'Polish Owned'}</span>
+            </div>
           </div>
-          <div className="flex items-center gap-2">
-            <span className="text-2xl">✈️</span>
-            <span className="text-gray-600 font-medium">25+ Tours</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <span className="text-2xl">🇵🇱</span>
-            <span className="text-gray-600 font-medium">Polish Owned</span>
+
+          {/* Mobile: vertical layout in 3 lines */}
+          <div className="sm:hidden space-y-4 px-4">
+            <div className="flex items-center justify-center gap-3 bg-white bg-opacity-80 rounded-lg py-3 px-4 shadow-sm">
+              <span className="text-yellow-400 text-2xl">⭐⭐⭐⭐⭐</span>
+              <span className="text-gray-700 font-semibold text-base">5.0 Rating</span>
+            </div>
+            <div className="flex items-center justify-center gap-3 bg-white bg-opacity-80 rounded-lg py-3 px-4 shadow-sm">
+              <span className="text-2xl">✈️</span>
+              <span className="text-gray-700 font-semibold text-base">250+ Tours</span>
+            </div>
+            <div className="flex items-center justify-center gap-3 bg-white bg-opacity-80 rounded-lg py-3 px-4 shadow-sm">
+              <span className="text-2xl">🇵🇱</span>
+              <span className="text-gray-700 font-semibold text-base">{currentLanguage === 'pl' ? 'Polskie' : currentLanguage === 'es' ? 'Propio Polaco' : 'Polish Owned'}</span>
+            </div>
           </div>
         </div>
       </div>

@@ -1,5 +1,7 @@
 export const content = {
   pl: {
+    // Site Title
+    siteTitle: "Kolumbia Magiczna",
     // Navigation
     nav: {
       home: "Strona główna",
@@ -71,12 +73,29 @@ export const content = {
       button: "Zaplanuj swoją przygodę przez WhatsApp",
       subtext: "Porozmawiaj bezpośrednio ze mną! Zaprojektuję dla Ciebie idealne doświadczenie."
     },
+    // About Adrian
+    about: {
+      title: "Poznaj Adriana",
+      subtitle: "Twój polski przewodnik w sercu Kolumbii",
+      story: "Jestem Adrian, Polak, który 5 lat temu przyjechał do Kolumbii w poszukiwaniu celu życia. Zamiast tego znalazłem znacznie więcej - kraj, który odmienił moje serce, i misję pomagania dzieciom z zagrożonych społeczności w górach kolumbijskich.",
+      mission: "Każda podróż, którą organizuję, nie tylko pokazuje Ci piękno Kolumbii, ale także wspiera lokalne projekty edukacyjne dla dzieci. To nie jest zwykła turystyka - to podróż z misją.",
+      experience: "5 lat w Kolumbii • ponad 250 zorganizowanych wycieczek • Płynna hiszpańszczyzna • Znajomość lokalnej kultury",
+      why: "Dlaczego wybrać mnie jako przewodnika?",
+      reasons: [
+        "Jestem Polakiem - rozumiem Twoją kulturę i oczekiwania",
+        "Znam Kolumbię jak własną kieszeń - mieszkam tu od 5 lat",
+        "Twoja podróż wspiera dzieci w potrzebie - podróżujesz z celem",
+        "Gwarantuję bezpieczeństwo i autentyczne doświadczenia"
+      ]
+    },
     // Footer
     footer: {
       text: "Z miłością, z Bogoty do Twojego polskiego serca."
     }
   },
   es: {
+    // Site Title
+    siteTitle: "Colombia Mágica",
     // Navigation
     nav: {
       home: "Inicio",
@@ -148,12 +167,29 @@ export const content = {
       button: "Planifica tu aventura por WhatsApp",
       subtext: "¡Habla directamente conmigo! Te diseño la experiencia perfecta para ti."
     },
+    // About Adrian
+    about: {
+      title: "Conoce a Adrian",
+      subtitle: "Tu guía polaco en el corazón de Colombia",
+      story: "Soy Adrian, un polaco que llegó a Colombia hace 5 años buscando el propósito de su vida. En lugar de eso, encontré mucho más: un país que transformó mi corazón y una misión de ayudar a niños de comunidades vulnerables en las montañas colombianas.",
+      mission: "Cada viaje que organizo no solo te muestra la belleza de Colombia, sino que también apoya proyectos educativos locales para niños. No es turismo común - es un viaje con misión.",
+      experience: "5 años en Colombia • más de 250 viajes organizados • Español fluido • Conocimiento de la cultura local",
+      why: "¿Por qué elegirme como tu guía?",
+      reasons: [
+        "Soy polaco - entiendo tu cultura y expectativas",
+        "Conozco Colombia como la palma de mi mano - vivo aquí hace 5 años",
+        "Tu viaje apoya niños necesitados - viajas con propósito",
+        "Garantizo seguridad y experiencias auténticas"
+      ]
+    },
     // Footer
     footer: {
       text: "Con amor, desde Bogotá hasta tu corazón polaco."
     }
   },
   en: {
+    // Site Title
+    siteTitle: "Magical Colombia",
     // Navigation
     nav: {
       home: "Home",
@@ -224,6 +260,21 @@ export const content = {
       subtitle: "It's not just a trip, it's your new story. One that will begin with incredible landscapes and end with a transformed heart. Because when you travel with purpose, you return being a better version of yourself.",
       button: "Plan your adventure via WhatsApp",
       subtext: "Talk directly with me! I'll design the perfect experience for you."
+    },
+    // About Adrian
+    about: {
+      title: "Meet Adrian",
+      subtitle: "Your Polish guide in the heart of Colombia",
+      story: "I'm Adrian, a Pole who came to Colombia 5 years ago searching for my life's purpose. Instead, I found much more: a country that transformed my heart and a mission to help children from vulnerable communities in the Colombian mountains.",
+      mission: "Every trip I organize not only shows you the beauty of Colombia, but also supports local educational projects for children. This isn't ordinary tourism - it's a journey with a mission.",
+      experience: "5 years in Colombia • over 250 organized trips • Fluent Spanish • Deep local culture knowledge",
+      why: "Why choose me as your guide?",
+      reasons: [
+        "I'm Polish - I understand your culture and expectations",
+        "I know Colombia like the back of my hand - I've lived here for 5 years",
+        "Your trip supports children in need - you travel with purpose",
+        "I guarantee safety and authentic experiences"
+      ]
     },
     // Footer
     footer: {

@@ -3,7 +3,7 @@ import { useLanguage } from '../hooks/useLanguage';
 const WhatsAppButton = ({ destination = '', className = '', children }) => {
   const { t } = useLanguage();
 
-  const phoneNumber = "573123456789"; // Adrian's WhatsApp number
+  const phoneNumber = "573160519681"; // Adrian's WhatsApp number
 
   const getMessage = () => {
     if (destination) {
@@ -22,7 +22,9 @@ const WhatsAppButton = ({ destination = '', className = '', children }) => {
       className={`
         inline-flex items-center gap-3 px-6 py-3 bg-green-500 hover:bg-green-600
         text-white font-semibold rounded-full transition-all duration-300
-        hover:scale-105 hover:shadow-lg group ${className}
+        hover:scale-105 hover:shadow-xl group shadow-lg
+        ${className.includes('bg-primary') ? 'bg-primary hover:bg-yellow-300 text-gray-900 hover:text-black' : ''}
+        ${className}
       `}
     >
       <svg className="w-5 h-5 group-hover:animate-bounce" fill="currentColor" viewBox="0 0 24 24">

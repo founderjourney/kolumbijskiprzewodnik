@@ -3,49 +3,49 @@ import { useLanguage } from '../hooks/useLanguage';
 import WhatsAppButton from './WhatsAppButton';
 
 const DestinationsSection = () => {
-  const { t } = useLanguage();
+  const { t, currentLanguage } = useLanguage();
   const [activeDestination, setActiveDestination] = useState(0);
 
   const destinations = [
     {
       key: 'cartagena',
-      image: 'https://images.unsplash.com/photo-1605540436563-5bca919ae766?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80',
+      image: '/images/cartagena.jpg',
       color: 'from-orange-400 to-red-500'
     },
     {
       key: 'medellin',
-      image: 'https://images.unsplash.com/photo-1583337130417-3346a1be7dee?ixlib=rb-4.0.3&auto=format&fit=crop&w=2128&q=80',
+      image: '/images/medellin-comuna.jpg',
       color: 'from-green-400 to-blue-500'
     },
     {
       key: 'eje',
-      image: 'https://images.unsplash.com/photo-1447933601403-0c6688de566e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2061&q=80',
+      image: '/images/mano-eje.jpg',
       color: 'from-yellow-400 to-orange-500'
     },
     {
       key: 'tayrona',
-      image: 'https://images.unsplash.com/photo-1580500700597-75d49f7e4bf8?ixlib=rb-4.0.3&auto=format&fit=crop&w=2069&q=80',
+      image: '/images/tayrona.jpg',
       color: 'from-blue-400 to-green-500'
     },
     {
       key: 'leticia',
-      image: 'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=2560&q=80',
+      image: '/images/leticia.jpg',
       color: 'from-green-600 to-emerald-500'
     }
   ];
 
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="py-16 md:py-24 bg-white relative">
+      <div className="max-w-7xl mx-auto px-6 md:px-8">
         {/* Title */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+        <div className="text-center mb-20">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-8">
             {t.destinations.title}
           </h2>
         </div>
 
         {/* Desktop Layout */}
-        <div className="hidden lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center mb-20">
+        <div className="hidden lg:grid lg:grid-cols-2 lg:gap-16 lg:items-start mb-24">
           {/* Image */}
           <div className="relative">
             <div className="aspect-w-4 aspect-h-3 rounded-2xl overflow-hidden shadow-2xl">
@@ -59,14 +59,14 @@ const DestinationsSection = () => {
           </div>
 
           {/* Content */}
-          <div className="space-y-8">
+          <div className="space-y-6">
             {destinations.map((dest, index) => (
               <div
                 key={dest.key}
-                className={`cursor-pointer p-6 rounded-xl transition-all duration-300 ${
+                className={`cursor-pointer p-6 md:p-8 rounded-xl transition-all duration-300 ${
                   activeDestination === index
-                    ? 'bg-gradient-to-r from-primary to-yellow-300 text-black shadow-lg scale-105'
-                    : 'hover:bg-gray-50'
+                    ? 'bg-gradient-to-r from-primary to-yellow-300 text-black shadow-xl scale-105'
+                    : 'hover:bg-gray-50 hover:shadow-md'
                 }`}
                 onClick={() => setActiveDestination(index)}
               >
@@ -79,9 +79,9 @@ const DestinationsSection = () => {
                 {activeDestination === index && (
                   <WhatsAppButton
                     destination={t.destinations[dest.key].title}
-                    className="animate-slide-up"
+                    className="animate-slide-up mt-4"
                   >
-                    📱 Reservar ahora
+                    📱 {currentLanguage === 'pl' ? 'Rezerwuj teraz' : currentLanguage === 'es' ? 'Reservar ahora' : 'Book now'}
                   </WhatsAppButton>
                 )}
               </div>
@@ -90,11 +90,11 @@ const DestinationsSection = () => {
         </div>
 
         {/* Mobile Layout */}
-        <div className="lg:hidden space-y-8">
+        <div className="lg:hidden space-y-6 md:space-y-8">
           {destinations.map((dest, index) => (
-            <div key={dest.key} className="bg-white rounded-2xl shadow-xl overflow-hidden">
+            <div key={dest.key} className="bg-white rounded-2xl shadow-xl overflow-hidden mx-2">
               {/* Image */}
-              <div className="relative h-64">
+              <div className="relative h-56 sm:h-64">
                 <img
                   src={dest.image}
                   alt={t.destinations[dest.key].title}
@@ -104,18 +104,18 @@ const DestinationsSection = () => {
               </div>
 
               {/* Content */}
-              <div className="p-6">
-                <h3 className="text-2xl font-bold mb-3 text-gray-900">
+              <div className="p-4 sm:p-6 md:p-8">
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-bold mb-3 md:mb-4 text-gray-900">
                   {t.destinations[dest.key].title}
                 </h3>
-                <p className="text-gray-700 leading-relaxed mb-6">
+                <p className="text-gray-700 leading-relaxed mb-6 md:mb-8 text-base sm:text-lg">
                   {t.destinations[dest.key].description}
                 </p>
                 <WhatsAppButton
                   destination={t.destinations[dest.key].title}
-                  className="w-full justify-center"
+                  className="w-full justify-center text-sm sm:text-base"
                 >
-                  📱 Reservar {t.destinations[dest.key].title.split(' - ')[0]}
+                  📱 {currentLanguage === 'pl' ? 'Rezerwuj' : currentLanguage === 'es' ? 'Reservar' : 'Book'} {t.destinations[dest.key].title.split(' - ')[0]}
                 </WhatsAppButton>
               </div>
             </div>

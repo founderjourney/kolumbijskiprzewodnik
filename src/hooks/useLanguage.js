@@ -11,9 +11,19 @@ export const useLanguage = () => {
     }
   }, []);
 
+  useEffect(() => {
+    // Update document title when language changes
+    const t = content[currentLanguage];
+    if (t && t.siteTitle) {
+      document.title = t.siteTitle;
+    }
+  }, [currentLanguage]);
+
   const changeLanguage = (lang) => {
     setCurrentLanguage(lang);
     localStorage.setItem('colombia-magica-language', lang);
+    // Force page reload to ensure all content updates immediately
+    window.location.reload();
   };
 
   const t = content[currentLanguage];

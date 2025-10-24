@@ -2,10 +2,10 @@ import { useLanguage } from '../hooks/useLanguage';
 import WhatsAppButton from './WhatsAppButton';
 
 const CTASection = () => {
-  const { t } = useLanguage();
+  const { t, currentLanguage } = useLanguage();
 
   return (
-    <section className="py-20 bg-gradient-to-br from-secondary via-colombia-blue to-poland-crimson relative overflow-hidden">
+    <section className="py-16 md:py-24 bg-gradient-to-br from-secondary via-colombia-blue to-poland-crimson relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-0 w-full h-full opacity-10">
@@ -16,26 +16,26 @@ const CTASection = () => {
         </div>
       </div>
 
-      <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
+      <div className="max-w-4xl mx-auto px-6 md:px-8 text-center relative z-10">
         {/* Main CTA */}
-        <div className="mb-12">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+        <div className="mb-16">
+          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-8 leading-tight">
             {t.cta.title}
           </h2>
-          <p className="text-xl md:text-2xl text-white text-opacity-95 leading-relaxed mb-8">
+          <p className="text-xl md:text-2xl lg:text-3xl text-white text-opacity-95 leading-relaxed mb-10">
             {t.cta.subtitle}
           </p>
         </div>
 
         {/* Main CTA Button */}
-        <div className="mb-8">
-          <WhatsAppButton className="bg-primary text-black hover:bg-yellow-300 text-lg px-10 py-5 text-xl font-bold">
+        <div className="mb-12">
+          <WhatsAppButton className="bg-primary text-black hover:bg-yellow-300 text-lg md:text-xl px-10 md:px-12 py-5 md:py-6 font-bold shadow-2xl">
             {t.cta.button}
           </WhatsAppButton>
         </div>
 
         {/* Subtext */}
-        <p className="text-lg text-white text-opacity-80 mb-12">
+        <p className="text-lg md:text-xl text-white text-opacity-80 mb-16">
           {t.cta.subtext}
         </p>
 
@@ -49,7 +49,7 @@ const CTASection = () => {
               </div>
               <div className="text-left">
                 <div className="text-white font-bold text-xl">Adrian</div>
-                <div className="text-white text-opacity-80">Tu guía polaco en Colombia</div>
+                <div className="text-white text-opacity-80">{t.about.subtitle}</div>
               </div>
             </div>
 
@@ -64,11 +64,11 @@ const CTASection = () => {
               </div>
               <div className="text-center">
                 <div className="text-3xl mb-2">✈️</div>
-                <div className="text-white text-sm">Tours</div>
+                <div className="text-white text-sm">{t.purpose.stats.trips.replace(' zorganizowanych podróży', '').replace(' viajes realizados', '').replace(' trips organized', 'Tours')}</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl mb-2">❤️</div>
-                <div className="text-white text-sm">Con propósito</div>
+                <div className="text-white text-sm whitespace-nowrap">{currentLanguage === 'pl' ? 'Z misją' : currentLanguage === 'es' ? 'Con propósito' : 'With purpose'}</div>
               </div>
             </div>
           </div>
