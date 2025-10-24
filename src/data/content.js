@@ -91,6 +91,11 @@ export const content = {
     // Footer
     footer: {
       text: "Z miłością, z Bogoty do Twojego polskiego serca."
+    },
+    // WhatsApp Messages
+    whatsapp: {
+      withDestination: "Cześć Adrian! Interesuje mnie pakiet turystyczny do {destination}. Czy mógłbyś opowiedzieć mi więcej szczegółów?",
+      general: "Cześć Adrian! Chciałbym dowiedzieć się więcej o wyjazdach do Kolumbii. Czy mógłbyś pomóc mi zaplanować podróż?"
     }
   },
   es: {
@@ -185,6 +190,11 @@ export const content = {
     // Footer
     footer: {
       text: "Con amor, desde Bogotá hasta tu corazón polaco."
+    },
+    // WhatsApp Messages
+    whatsapp: {
+      withDestination: "¡Hola Adrian! Me interesa el paquete turístico de {destination}. ¿Podrías contarme más detalles?",
+      general: "¡Hola Adrian! Me interesa conocer más sobre los tours por Colombia. ¿Podrías ayudarme a planificar mi viaje?"
     }
   },
   en: {
@@ -279,6 +289,11 @@ export const content = {
     // Footer
     footer: {
       text: "With love, from Bogotá to your Polish heart."
+    },
+    // WhatsApp Messages
+    whatsapp: {
+      withDestination: "Hi Adrian! I'm interested in the tourist package to {destination}. Could you tell me more details?",
+      general: "Hi Adrian! I'm interested in learning more about tours to Colombia. Could you help me plan my trip?"
     }
   }
 };

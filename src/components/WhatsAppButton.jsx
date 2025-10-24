@@ -7,9 +7,9 @@ const WhatsAppButton = ({ destination = '', className = '', children }) => {
 
   const getMessage = () => {
     if (destination) {
-      return `¡Hola Adrian! Me interesa el paquete turístico de ${destination}. ¿Podrías contarme más detalles?`;
+      return t.whatsapp.withDestination.replace('{destination}', destination);
     }
-    return "¡Hola Adrian! Me interesa conocer más sobre los tours por Colombia. ¿Podrías ayudarme a planificar mi viaje?";
+    return t.whatsapp.general;
   };
 
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(getMessage())}`;
