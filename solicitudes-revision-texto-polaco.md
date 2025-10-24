@@ -1,0 +1,101 @@
+**INFORME TÉCNICO DE CORRECCIÓN LINGÜÍSTICA**
+
+**SOLICITUD DE REVISIÓN Y CORRECCIÓN**
+**Texto Promocional - Agencia de Viajes KolumbiaMagiczna**
+
+---
+
+**DATOS DEL PROYECTO:**
+- **Cliente:** Agencia de Viajes KolumbiaMagiczna
+- **Tipo de documento:** Material promocional/página web
+- **Idioma:** Polaco (pl-PL)
+- **Fecha de revisión:** 24 de octubre de 2025
+- **Especialista:** Traductor Senior especializado en lengua polaca
+- **Estado:** Requiere correcciones menores
+
+---
+
+**RESUMEN EJECUTIVO**
+
+El texto analizado presenta una calidad general muy satisfactoria, con un tono emocional apropiado para material promocional turístico. Sin embargo, se han identificado **5 errores específicos** que requieren corrección para garantizar la máxima profesionalidad y naturalidad lingüística del contenido.
+
+---
+
+**ERRORES IDENTIFICADOS Y CORRECCIONES PROPUESTAS**
+
+**ERROR 1 - CONCORDANCIA VERBAL**
+- **Ubicación:** Sección "Więcej niż turystyka, to misja"
+- **Texto actual:** "Każda podróż, którą organizujesz"
+- **Corrección propuesta:** "Każda podróż, którą organizuję"
+- **Justificación:** El contexto indica que Adrian habla de sí mismo como organizador de viajes
+- **Prioridad:** ALTA
+
+**ERROR 2 - ANGLICISMO INNECESARIO**
+- **Ubicación:** Título de sección
+- **Texto actual:** "Epiczne destynacje"
+- **Corrección propuesta:** "Epiczne miejsca docelowe" o "Epiczne cele podróży"
+- **Justificación:** En polaco estándar se prefieren términos nativos sobre anglicismos
+- **Prioridad:** MEDIA
+
+**ERROR 3 - ADAPTACIÓN LÉXICA**
+- **Ubicación:** Descripción de Eje Cafetero
+- **Texto actual:** "stuletnie haciedy"
+- **Corrección propuesta:** "stuletnie hacjendy" o "stuletnie gospodarstwa"
+- **Justificación:** Palabras extranjeras deben polonizarse o sustituirse por equivalentes nativos
+- **Prioridad:** MEDIA
+
+**ERROR 4 - LATINISMO INNECESARIO**
+- **Ubicación:** Descripciones de Tayrona y Leticia
+- **Texto actual:** "ancestralne góry" / "ancestralnych rzekach"
+- **Corrección propuesta:** "pradawne góry" / "pradawnych rzekach"
+- **Justificación:** Los términos nativos polacos son más naturales y comprensibles
+- **Prioridad:** MEDIA
+
+**ERROR 5 - EXPRESIÓN POCO NATURAL**
+- **Ubicación:** Descripción de Leticia
+- **Texto actual:** "oddychaj najczystszym życiem planety"
+- **Corrección propuesta:** "oddychaj najczystszym powietrzem planety"
+- **Justificación:** Construcción más lógica y natural en polaco
+- **Prioridad:** ALTA
+
+---
+
+**ASPECTOS POSITIVOS IDENTIFICADOS**
+
+✅ **Estructura narrativa coherente y atractiva**
+✅ **Tono emocional apropiado para el target**
+✅ **Gramática general correcta en el 95% del contenido**
+✅ **Vocabulario rico y descriptivo**
+✅ **Registro lingüístico apropiado**
+✅ **Uso efectivo de elementos visuales (emojis, banderas)**
+
+---
+
+**RECOMENDACIONES ADICIONALES**
+
+1. **Implementar las 5 correcciones identificadas** antes de la publicación
+2. **Revisar consistencia** en el uso de terminología turística
+3. **Considerar prueba de lectura** con hablante nativo polaco
+4. **Mantener el tono emocional actual** que es muy efectivo
+
+---
+
+**TIEMPO ESTIMADO DE CORRECCIÓN**
+
+- **Correcciones menores:** 30-45 minutos
+- **Revisión final:** 15 minutos
+- **Total:** 1 hora máximo
+
+---
+
+**CONCLUSIÓN**
+
+El texto de KolumbiaMagiczna presenta una calidad muy satisfactoria y solo requiere ajustes menores para alcanzar el estándar profesional óptimo. Una vez implementadas las correcciones propuestas, el material estará listo para su uso comercial sin reservas.
+
+**ESTADO RECOMENDADO:** Aprobado con correcciones menores
+
+---
+
+**Firma del especialista:**
+Traductor Senior - Especialista en Lengua Polaca
+Fecha: 24 de octubre de 2025

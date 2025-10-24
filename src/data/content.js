@@ -19,7 +19,7 @@ export const content = {
     // Purpose Section
     purpose: {
       title: "Więcej niż turystyka, to misja",
-      subtitle: "Każda podróż, którą organizujesz, nie tylko łączy Cię z magią Kolumbii, ale także pomaga dzieciom z zagrożonych społeczności w górach. Ponieważ podróżowanie z celem to najbardziej transformacyjne doświadczenie, jakie istnieje.",
+      subtitle: "Każda podróż, którą organizuję, nie tylko łączy Cię z magią Kolumbii, ale także pomaga dzieciom z zagrożonych społeczności w górach. Ponieważ podróżowanie z celem to najbardziej transformacyjne doświadczenie, jakie istnieje.",
       stats: {
         children: "dzieci otrzymało pomoc",
         trips: "zorganizowanych podróży",
@@ -28,7 +28,7 @@ export const content = {
     },
     // Destinations
     destinations: {
-      title: "Epiczne destynacje",
+      title: "Epiczne miejsca docelowe",
       cartagena: {
         title: "Cartagena - Klejnot Karaibów",
         description: "Spaceruj ulicami, które szepczą historie sprzed 500 lat. Mury pozłacane karaibskim słońcem, kwieciste balkony i zachody słońca, które wydają się namalowane przez bogów."
@@ -39,15 +39,15 @@ export const content = {
       },
       eje: {
         title: "Eje Cafetero - Aromatyczny Raj",
-        description: "Gdzie każde ziarno opowiada historię. Faliste krajobrazy intensywnej zieleni, stuletnie haciedy i najdelikatniejsza kawa na świecie prosto z rąk rolników."
+        description: "Gdzie każde ziarno opowiada historię. Faliste krajobrazy intensywnej zieleni, stuletnie gospodarstwa i najdelikatniejsza kawa na świecie prosto z rąk rolników."
       },
       tayrona: {
         title: "Tayrona - Gdzie Dżungla Całuje Morze",
-        description: "Dziewicze plaże chronione przez ancestralne góry. Tutaj czas się zatrzymuje, a Twoja dusza znajduje spokój, którego szukała."
+        description: "Dziewicze plaże chronione przez pradawne góry. Tutaj czas się zatrzymuje, a Twoja dusza znajduje spokój, którego szukała."
       },
       leticia: {
         title: "Leticia - Portal do Nieskończonej Amazonii",
-        description: "Gdzie cywilizacja spotyka się z płucami świata. Żegluj po ancestralnych rzekach, poznaj rdzenne społeczności, które strzegą tysiącletnich tajemnic i oddychaj najczystszym życiem planety."
+        description: "Gdzie cywilizacja spotyka się z płucami świata. Żegluj po pradawnych rzekach, poznaj rdzenne społeczności, które strzegą tysiącletnich tajemnic i oddychaj najczystszym powietrzem planety."
       }
     },
     // Testimonials

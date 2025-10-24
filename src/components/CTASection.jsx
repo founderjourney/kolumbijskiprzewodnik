@@ -57,10 +57,21 @@ const CTASection = () => {
             <div className="hidden md:block w-px h-16 bg-white bg-opacity-30"></div>
 
             {/* Contact options */}
-            <div className="flex items-center gap-6">
+            <div className="flex items-center gap-4 md:gap-6">
               <div className="text-center">
                 <div className="text-3xl mb-2">📱</div>
                 <div className="text-white text-sm">WhatsApp</div>
+              </div>
+              <div className="text-center">
+                <a
+                  href="https://instagram.com/kolumbijski_przewodnik"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:scale-110 transition-transform duration-200"
+                >
+                  <div className="text-3xl mb-2">📸</div>
+                  <div className="text-white text-sm">Instagram</div>
+                </a>
               </div>
               <div className="text-center">
                 <div className="text-3xl mb-2">✈️</div>
